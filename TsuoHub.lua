@@ -27,7 +27,7 @@ local Scripts = {
     },
     ["FishIt"] = {
         Ids = {121864768012064},
-        Url = "https://raw.githubusercontent.com/DRK070/TsuoFishIt/refs/heads/main/TsuoHubFishIt.lua"
+        Url = "https://raw.githubusercontent.com/DRK070/TsuoFishIt/refs/heads/main/TsuoFishIt.lua"
     }
 }
 
