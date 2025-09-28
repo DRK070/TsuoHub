@@ -15,7 +15,7 @@ local Scripts = {
     },
     ["99Nights"] = {
         Ids = {126509999114328},
-        Url = "https://raw.githubusercontent.com/DRK070/99nights/refs/heads/main/tsuohub99night.lua"
+        Url = "https://raw.githubusercontent.com/Tsuo7/TsuoHub/main/Tsuohub99nights"
     },
     ["BloxFruits"] = {
         Ids = {7449423635, 4442272183, 2753915549}, -- adicionei os 3 IDs
@@ -24,6 +24,10 @@ local Scripts = {
     ["Forsaken"] = {
         Ids = {18687417158},
         Url = "https://raw.githubusercontent.com/DRK070/TsuoHubForsaken/refs/heads/main/TsuoForsaken.lua"
+    },
+    ["PlantvsBrainrot"] = {
+    Ids = {127742093697776},
+    Url = "https://raw.githubusercontent.com/DRK070/PlantVsBrainrot/refs/heads/main/TsuoPlantVsBrainrot.lua"
     },
     ["FishIt"] = {
         Ids = {121864768012064},
