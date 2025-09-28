@@ -25,13 +25,13 @@ local Scripts = {
         Ids = {18687417158},
         Url = "https://raw.githubusercontent.com/DRK070/TsuoHubForsaken/refs/heads/main/TsuoForsaken.lua"
     },
-    ["PlantvsBrainrot"] = {
-    Ids = {127742093697776},
-    Url = "https://raw.githubusercontent.com/DRK070/PlantVsBrainrot/refs/heads/main/TsuoPlantVsBrainrot.lua"
-    },
     ["FishIt"] = {
         Ids = {121864768012064},
         Url = "https://raw.githubusercontent.com/DRK070/TsuoFishIt/refs/heads/main/TsuoFishIt.lua"
+    },
+    ["PlantVsBrainrot"] = {
+        Ids = {127742093697776},
+        Url = "https://raw.githubusercontent.com/DRK070/PlantVsBrainrot/refs/heads/main/TsuoPlantVsBrainrot.lua"
     }
 }
 
