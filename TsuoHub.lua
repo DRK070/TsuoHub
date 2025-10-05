@@ -18,7 +18,7 @@ local Scripts = {
         Url = "https://raw.githubusercontent.com/Tsuo7/TsuoHub/main/Tsuohub99nights"
     },
     ["BloxFruits"] = {
-        Ids = {7449423635, 4442272183, 2753915549}, -- adicionei os 3 IDs
+        Ids = {7449423635, 4442272183, 2753915549},
         Url = "https://raw.githubusercontent.com/Overgustx2/TsuoLoader/main/Tsuo.lua"
     },
     ["Forsaken"] = {
@@ -32,6 +32,10 @@ local Scripts = {
     ["PlantVsBrainrot"] = {
         Ids = {127742093697776},
         Url = "https://raw.githubusercontent.com/DRK070/PlantVsBrainrot/refs/heads/main/TsuoPlantVsBrainrot.lua"
+    },
+    ["DemonFall"] = {
+        Ids = {175967902593},
+        Url = "https://raw.githubusercontent.com/yrururhdhdhududhdheh-stack/Tsuohub/refs/heads/main/tsuobhub.lua"
     }
 }
 
