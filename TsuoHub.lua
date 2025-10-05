@@ -34,7 +34,7 @@ local Scripts = {
         Url = "https://raw.githubusercontent.com/DRK070/PlantVsBrainrot/refs/heads/main/TsuoPlantVsBrainrot.lua"
     },
     ["DemonFall"] = {
-        Ids = {175967902593},
+        Ids = {5094651510},
         Url = "https://raw.githubusercontent.com/yrururhdhdhududhdheh-stack/Tsuohub/refs/heads/main/tsuobhub.lua"
     }
 }
