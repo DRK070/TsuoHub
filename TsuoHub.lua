@@ -29,6 +29,10 @@ local Scripts = {
         Ids = {121864768012064},
         Url = "https://raw.githubusercontent.com/DRK070/TsuoFishIt/refs/heads/main/TsuoFishIt.lua"
     },
+    ["Fisch"] = {
+        Ids = {16732694052, 131716211654599},
+        Url = "https://raw.githubusercontent.com/DRK070/TsuoFisch/refs/heads/main/TsuoFisch.lua"
+    },
     ["PlantVsBrainrot"] = {
         Ids = {127742093697776},
         Url = "https://raw.githubusercontent.com/DRK070/PlantVsBrainrot/refs/heads/main/TsuoPlantVsBrainrot.lua"
