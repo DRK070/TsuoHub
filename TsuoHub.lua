@@ -40,6 +40,10 @@ local Scripts = {
     ["DemonFall"] = {
         Ids = {5094651510},
         Url = "https://raw.githubusercontent.com/yrururhdhdhududhdheh-stack/Tsuohub/refs/heads/main/tsuobhub.lua"
+    },
+    ["SpeedLegends"] = {
+        Ids = {3101667897},
+        Url = "https://raw.githubusercontent.com/DRK070/TsuoSpeed/refs/heads/main/TsuoSpeedLegends.lua"
     }
 }
 
