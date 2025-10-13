@@ -44,13 +44,18 @@ local Scripts = {
     ["SpeedLegends"] = {
         Ids = {3101667897},
         Url = "https://raw.githubusercontent.com/DRK070/TsuoSpeed/refs/heads/main/TsuoSpeedLegends.lua"
+    },
+    ["TowerOfHell"] = {
+        Ids = {3582763398, 1962086868},
+        Url = "https://raw.githubusercontent.com/DRK070/TsuoTower/refs/heads/main/TsuoTower.lua"
     }
 }
 
 local function getScriptUrl(placeId)
-    for _, data in pairs(Scripts) do
+    for name, data in pairs(Scripts) do
         for _, id in ipairs(data.Ids) do
             if id == placeId then
+                print("Carregando script: " .. name)
                 return data.Url
             end
         end
