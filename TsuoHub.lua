@@ -48,6 +48,10 @@ local Scripts = {
     ["TowerOfHell"] = {
         Ids = {3582763398, 1962086868},
         Url = "https://raw.githubusercontent.com/DRK070/TsuoTower/refs/heads/main/TsuoTower.lua"
+    },
+    ["MurderMystery2"] = {
+        Ids = {142823291},
+        Url = "https://raw.githubusercontent.com/DRK070/TsuoMM2/refs/heads/main/TsuoMM2.lua"
     }
 }
 
