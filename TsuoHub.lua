@@ -15,7 +15,7 @@ local Scripts = {
     },
     ["99Nights"] = {
         Ids = {126509999114328},
-        Url = "https://raw.githubusercontent.com/Tsuo7/TsuoHub/main/Tsuohub99nights"
+        Url = "https://raw.githubusercontent.com/DRK070/99nights/refs/heads/main/tsuohub99night.lua"
     },
     ["BloxFruits"] = {
         Ids = {7449423635, 4442272183, 2753915549},
