@@ -55,11 +55,13 @@ local Scripts = {
     }
 }
 
+local FALLBACK_URL = "https://raw.githubusercontent.com/DRK070/TsuoUniversal/refs/heads/main/TsuoUniversal.lua"
+
 local function getScriptUrl(placeId)
     for name, data in pairs(Scripts) do
         for _, id in ipairs(data.Ids) do
             if id == placeId then
-                print("🌀 Carregando script para: " .. name)
+                print("Carregando script: " .. name)
                 return data.Url
             end
         end
@@ -67,40 +69,45 @@ local function getScriptUrl(placeId)
     return nil
 end
 
-local function safeLoadUrl(url, scriptName)
+local function safeLoadUrl(url)
     if not url or url == "" then
-        warn("⚠️ URL inválida recebida.")
-        return
+        warn("URL inválida passada para safeLoadUrl.")
+        return false
     end
 
-    local ok, contentOrErr = pcall(function() return game:HttpGet(url) end)
-    if not ok then
-        warn("⚠️ Falha ao obter script " .. (scriptName or "") .. ".")
-        return
+    local ok, content = pcall(function()
+        return game:HttpGet(url)
+    end)
+
+    if not ok or not content then
+        warn("Falha ao obter o script em: " .. tostring(url))
+        return false
     end
 
-    local ok2, funcOrErr = pcall(loadstring, contentOrErr)
-    if not ok2 or type(funcOrErr) ~= "function" then
-        warn("⚠️ Erro ao compilar script " .. (scriptName or "") .. ".")
-        return
+    local execOk, execErr = pcall(function()
+        local fn = loadstring(content)
+        if not fn then error("loadstring retornou nil") end
+        fn()
+    end)
+
+    if not execOk then
+        warn("Erro ao executar o script de: " .. tostring(url) .. " | Erro: " .. tostring(execErr))
+        return false
     end
 
-    local ok3, execErr = pcall(funcOrErr)
-    if not ok3 then
-        warn("⚠️ Erro ao executar script " .. (scriptName or "") .. ".")
-        return
-    end
-
-    print("✅ Script " .. (scriptName or "desconhecido") .. " carregado com sucesso.")
+    return true
 end
 
 local ScriptUrl = getScriptUrl(PlaceId)
 
 if ScriptUrl then
-    safeLoadUrl(ScriptUrl, "Principal")
+    if not safeLoadUrl(ScriptUrl) then
+        warn("Tentativa de carregar o script principal falhou. Tentando fallback universal...")
+        safeLoadUrl(FALLBACK_URL)
+    end
 else
-    warn("❌ Nenhum script configurado para este jogo! PlaceId: " .. PlaceId)
+    print("Nenhum script específico configurado para este jogo. Carregando fallback universal...")
+    if not safeLoadUrl(FALLBACK_URL) then
+        warn("Falha ao carregar o fallback universal. PlaceId: " .. tostring(PlaceId))
+    end
 end
-
-local ContadorUrl = "https://raw.githubusercontent.com/DRK070/Contador/refs/heads/main/ContadorTsuo.lua"
-safeLoadUrl(ContadorUrl, "Contador")
