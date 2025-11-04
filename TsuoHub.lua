@@ -52,6 +52,10 @@ local Scripts = {
     ["MurderMystery2"] = {
         Ids = {142823291},
         Url = "https://raw.githubusercontent.com/DRK070/TsuoMM2/refs/heads/main/TsuoMM2.lua"
+    },
+    ["WeakLegacy"] = {
+        Ids = {18337464872},
+        Url = "https://raw.githubusercontent.com/DRK070/TsuoWeakLegacy/refs/heads/main/TsuoWeakLegacy.lua"
     }
 }
 
