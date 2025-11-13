@@ -57,11 +57,13 @@ local Scripts = {
         Ids = {18337464872},
         Url = "https://raw.githubusercontent.com/DRK070/TsuoWeakLegacy/refs/heads/main/TsuoWeakLegacy.lua"
     },
-
-    -- ADICIONADO: Steal a Brainrot (SAB)
     ["SAB"] = {
         Ids = {109983668079237},
         Url = "https://raw.githubusercontent.com/DRK070/TsuoSAB/refs/heads/main/TsuoSAB.lua"
+    },
+    ["VoleyBallLegends"] = {
+        Ids = {73956553001240},
+        Url = "https://raw.githubusercontent.com/DRK070/TsuoVoleyBallLegends/refs/heads/main/TsuoVoleyLegends.lua"
     }
 }
 
