@@ -62,7 +62,7 @@ local Scripts = {
         Url = "https://raw.githubusercontent.com/DRK070/TsuoSAB/refs/heads/main/TsuoSAB.lua"
     },
     ["VoleyBallLegends"] = {
-        Ids = {73956553001240},
+        Ids = {74691681039273},
         Url = "https://raw.githubusercontent.com/DRK070/TsuoVoleyBallLegends/refs/heads/main/TsuoVoleyLegends.lua"
     }
 }
